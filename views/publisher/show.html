@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/views/css/normalize.css">
     <link rel="stylesheet" href="/views/css/skeleton.css">
-</head>
-
+</head>			
 <body>
     <div class="container">
         <div class="row">
@@ -19,28 +18,32 @@
                     {{#publisher}}
                     <div class="row">
                         <div class="six columns">
-                            <label for="titleInput">Title</label>
-                            <input class="u-full-width" type="text" readonly id="title" value="{{title}}">
+                            <label for="publisherInput">Publisher</label>
+                            <input class="u-full-width" type="text" readonly id="publisher" value="{{publisher}}">
                         </div>
                         <div class="six columns">
-                            <label for="editionInput">Edition</label>
-                            <input class="u-full-width" type="text" readonly id="edition" value="{{edition}}">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="six columns">
-                            <label for="copyrightInput">Copyright</label>
-                            <input class="u-full-width" type="text" readonly id="copyright" value="{{copyright}}">
-                        </div>
-                        <div class="six columns">
-                            <label for="languageInput">Language</label>
-                            <input class="u-full-width" type="text" readonly id="language" value="{{language}}">
+                            <label for="countryInput">Country</label>
+                            <input class="u-full-width" type="text" readonly id="country" value="{{country}}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="six columns">
-                            <label for="pagesInput">Pages</label>
-                            <input class="u-full-width" type="number" readonly id="pages" value="{{pages}}">
+                            <label for="foundedInput">Founded</label>
+                            <input class="u-full-width" type="text" readonly id="founded" value="{{founded}}">
+                        </div>
+                        <div class="six columns">
+                            <label for="genereInput">Genere</label>
+                            <input class="u-full-width" type="text" readonly id="genere" value="{{genere}}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <label for="books__book_idInput">Books__book_id</label>
+                            <input class="u-full-width" type="number" readonly id="books__book_id" value="{{books__book_id}}">
+                        </div>
+                        <div class="six columns">
+                            <label for="books__titleInput">Books__title</label>
+                            <input class="u-full-width" type="text" readonly id="books__title" value="{{books__title}}">
                         </div>
                     </div>
                     <div class="row">

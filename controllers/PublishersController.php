@@ -14,7 +14,7 @@ class PublishersController extends Controller
   {
     $p = Publisher::find($id);
     return view(
-      'publishers/show',
+      'publisher/show',
       [
         'publisher' => $p,
         'title' => 'Publisher Detail'

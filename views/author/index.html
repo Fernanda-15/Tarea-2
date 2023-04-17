@@ -27,23 +27,20 @@
             </tr>
           </thead>
           <tbody>
-            {{#books}}
+            {{#author}}
             <tr>
-              <td><a href="book/{{id}}">
-                  {{id}}</a></td>
-              <td>{{author}}</td>
+              <td>{{id}}</td>
+              <td><a href="author/{{id}}">
+                {{author}}</a></td>
               <td>{{nationality}}</td>
               <td>{{birth_year}}</td>
               <td>{{fields}}</td>
-              <td>{{books__book_id}}</td>
               <td><a href="book/{{books__book_id}}">
-                  {{author}}</a></td>
-              <td>{{books__title}}</td>
+                  {{books__book_id}}</a></td>
               <td><a href="book/{{books__book_id}}">
-                  {{publisher}}</a></td>
-              <td>{{publisher_id}}</td>
+                {{books__title}}</a></td>
             </tr>
-            {{/books}}
+            {{/author}}
           </tbody>
         </table>
       </div>
