@@ -33,26 +33,23 @@
     return redirect('/authors');
   }  
 
-/*
-  public function update($_,$id) {
 
-    $publisher = Input::get('publisher');
-    $country = Input::get('country');
-    $founded = Input::get('founded');
-    $genere = Input::get('genere');
+  public function update($id,$_=NULL) {
+
+    $author = Input::get('author');
+    $nationality = Input::get('nationality');
+    $birth_year = Input::get('birth_year');
+    $fields = Input::get('fields');
     $books__book_id = Input::get('books__book_id');
     $books__title = Input::get('books__title');
-    $author_id = Input::get('author_id');
-    $publisher = Input::get('publisher');
-    $publisher_id = Input::get('publisher_id');
-    $item = ['publisher'=>$publisher,'country'=>$country,
-             'founded'=>$founded,'genere'=>$genere,
+    $item = ['author'=>$author,'nationality'=>$nationality,
+             'birth_year'=>$birth_year,'fields'=>$fields,
              'books__book_id'=>$books__book_id,
              'books__title'=>$books__title];
-    Publisher::update($id,$item);
-    return redirect('/publisher');
+    Author::update($id,$item);
+    return redirect('/authors');
   }  
-  */
+  
 
   public function edit($id) {
     $p = Author::find($id);

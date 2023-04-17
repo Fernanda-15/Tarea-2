@@ -14,6 +14,15 @@
   Route::post('/publisher', 'PublishersController@store');
 
   
+  Route::get('book/edit/(:number)', 'BooksController@edit');
+  Route::put('/book/(:number)', 'BooksController@update');
+  
+  Route::get('author/edit/(:number)', 'AuthorsController@edit');
+  Route::put('/author/(:number)', 'AuthorsController@update');
+
+  Route::get('publisher/edit/(:number)', 'PublishersController@edit');
+  Route::put('/publisher/(:number)', 'PublishersController@update');
+
 
   Route::dispatch();
 ?>

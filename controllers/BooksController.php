@@ -37,8 +37,14 @@
     return redirect('/books');
   }  
 
- /*  public function update($_,$id) {
+  public function edit($id) {
+    $b = Book::find($id);
+    return view('book/edit',
+      ['book'=>$b,
+       'title'=>'Book Edit']);
+  } 
 
+ public function update($id,$_=NULL) {
     $title = Input::get('title');
     $edition = Input::get('edition');
     $copyright = Input::get('copyright');
@@ -54,14 +60,9 @@
              'author_id'=>$author_id,'publisher'=>$publisher,
              'publisher_id'=>$publisher_id];
     Book::update($id,$item);
-    return redirect('/book');
-  }   */
+    return redirect('/books');
+  }   
 
-  public function edit($id) {
-    $b = Book::find($id);
-    return view('book/edit',
-      ['book'=>$b,
-       'title'=>'Book Edit']);
-  }  
+ 
   }
 ?>
