@@ -34,7 +34,7 @@
              'author_id'=>$author_id,'publisher'=>$publisher,
              'publisher_id'=>$publisher_id];
     Book::create($item);
-    return redirect('/book');
+    return redirect('/books');
   }  
 
  /*  public function update($_,$id) {

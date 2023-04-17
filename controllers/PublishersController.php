@@ -29,16 +29,13 @@ class PublishersController extends Controller
     );
   }
 
- /*  public function store($item) {
+    public function store($_=NULL) {
     $publisher = Input::get('publisher');
     $country = Input::get('country');
     $founded = Input::get('founded');
     $genere = Input::get('genere');
     $books__book_id = Input::get('books__book_id');
     $books__title = Input::get('books__title');
-    $author_id = Input::get('author_id');
-    $publisher = Input::get('publisher');
-    $publisher_id = Input::get('publisher_id');
     $item = [
       'publisher' => $publisher,
       'country' => $country,
@@ -48,8 +45,8 @@ class PublishersController extends Controller
       'books__title' => $books__title
     ];
     Publisher::create($item);
-    return redirect('/publisher');
-  } */
+    return redirect('/publishers');
+  } 
 
   // public function update($_,$id) {
 
